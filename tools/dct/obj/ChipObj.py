@@ -1,6 +1,14 @@
 #! /usr/bin/python
 # -*- coding: utf-8 -*-
 
+def cmp(x, y):
+    if x < y:
+        return -1
+    elif x > y:
+        return 1
+    else:
+        return 0
+
 # Copyright (C) 2016 MediaTek Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -16,34 +24,34 @@ import os, sys
 import collections
 import xml.dom.minidom
 
-from GpioObj import GpioObj
-from GpioObj import GpioObj_whitney
-from GpioObj import GpioObj_MT6759
-from GpioObj import GpioObj_MT6739
-from GpioObj import GpioObj_MT6771
-from GpioObj import GpioObj_MT6763
-from GpioObj import GpioObj_MT6768
-from GpioObj import GpioObj_MT6785
-from EintObj import EintObj
-from EintObj import EintObj_MT6750S
-from EintObj import EintObj_MT6739
-from AdcObj import AdcObj
-from AdcObj import AdcObj_MT6785
-from ClkObj import ClkObj
-from ClkObj import ClkObj_Everest
-from ClkObj import ClkObj_Olympus
-from ClkObj import ClkObj_Rushmore
-from ClkObj import ClkObj_MT6779
-from I2cObj import I2cObj
-from I2cObj import I2cObj_MT6759
-from I2cObj import I2cObj_MT6775
-from PmicObj import PmicObj
-from PmicObj import PmicObj_MT6758
-from Md1EintObj import Md1EintObj
-from Md1EintObj import Md1EintObj_MT6739
-from PowerObj import PowerObj
-from KpdObj import KpdObj
-from ModuleObj import ModuleObj
+from .GpioObj import GpioObj
+from .GpioObj import GpioObj_whitney
+from .GpioObj import GpioObj_MT6759
+from .GpioObj import GpioObj_MT6739
+from .GpioObj import GpioObj_MT6771
+from .GpioObj import GpioObj_MT6763
+from .GpioObj import GpioObj_MT6768
+from .GpioObj import GpioObj_MT6785
+from .EintObj import EintObj
+from .EintObj import EintObj_MT6750S
+from .EintObj import EintObj_MT6739
+from .AdcObj import AdcObj
+from .AdcObj import AdcObj_MT6785
+from .ClkObj import ClkObj
+from .ClkObj import ClkObj_Everest
+from .ClkObj import ClkObj_Olympus
+from .ClkObj import ClkObj_Rushmore
+from .ClkObj import ClkObj_MT6779
+from .I2cObj import I2cObj
+from .I2cObj import I2cObj_MT6759
+from .I2cObj import I2cObj_MT6775
+from .PmicObj import PmicObj
+from .PmicObj import PmicObj_MT6758
+from .Md1EintObj import Md1EintObj
+from .Md1EintObj import Md1EintObj_MT6739
+from .PowerObj import PowerObj
+from .KpdObj import KpdObj
+from .ModuleObj import ModuleObj
 
 from utility.util import log
 from utility.util import LogLevel
